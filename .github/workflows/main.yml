@@ -19,7 +19,7 @@ jobs:
     strategy:
       matrix:
         postgres: [16]
-        postgis: ['3.4']
+        postgis: ['3.5']
         latest: [false]
 
     name: Build docker image for ${{ matrix.postgres }}-${{ matrix.postgis }}
