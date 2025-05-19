@@ -5,17 +5,17 @@ PostGIS-Images für verschiedene Zwecke. Das Debian-Image beinhaltet [ogr foreig
 ## Build
 
 ```
-docker build -t sogis/postgis:16-3.4 .
+docker build -t sogis/postgis:16-3.5 .
 ```
 
 ## Run
 
 ```
-docker run --rm --name editdb -p 54321:5432 -e POSTGRES_PASSWORD=secret -e POSTGRES_DB=edit sogis/postgis:16-3.4
+docker run --rm --name editdb -p 54321:5432 -e POSTGRES_PASSWORD=secret -e POSTGRES_DB=edit sogis/postgis:16-3.5
 ```
 
 ```
-docker run --rm --name editdb -p 54321:5432 -v pgdata:/var/lib/postgresql/data:delegated -e POSTGRES_PASSWORD=secret -e POSTGRES_DB=edit sogis/postgis:16-3.4
+docker run --rm --name editdb -p 54321:5432 -v pgdata:/var/lib/postgresql/data:delegated -e POSTGRES_PASSWORD=secret -e POSTGRES_DB=edit sogis/postgis:16-3.5
 ```
 
 Analog für das Alpine-Image.
