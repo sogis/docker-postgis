@@ -1,10 +1,6 @@
 # docker-postgis
 
-PostGIS-Images für verschiedene Zwecke.
-* Das Debian-Bullseye-Image beinhaltet [ogr foreign data wrapper](https://github.com/pramsey/pgsql-ogr-fdw).
-* Das Debian-Bookworm-Image bietet GEOS 3.11.
-
-Urzwecke: Support für ARM64-Prozessoren.
+PostGIS-Images für verschiedene Zwecke. Das Debian-Image beinhaltet [ogr foreign data wrapper](https://github.com/pramsey/pgsql-ogr-fdw). Urzwecke: Support für ARM64-Prozessoren.
 
 ## Build
 
