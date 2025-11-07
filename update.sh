@@ -35,7 +35,7 @@ declare -A debianSuite=(
     [14]='bullseye-slim'
     [15]='bullseye-slim'
     [16]='bullseye-slim'
-    [17]='bullseye-slim'
+    [17]='bookworm-slim'
     [18]='trixie-slim'
 )
 
@@ -162,6 +162,8 @@ for version in "${versions[@]}"; do
     fullVersion="$(echo "$versionList" | awk -F ': ' '$1 == "Package" { pkg = $2 } $1 == "Version" && pkg == "postgresql-'"$postgresVersionMain"'" { print $2; exit }' || true)"
 
     if [ "$suite" = "bullseye" ]; then
+        boostVersion="1.74.0"
+    elif [ "$suite" = "bookworm" ]; then
         boostVersion="1.74.0"
     elif [ "$suite" = "trixie" ]; then
         boostVersion="1.88.0"
