@@ -29,11 +29,11 @@ defaultAlpinenSuite='3.22'
 defaultDebianSuite='bullseye-slim'
 declare -A debianSuite=(
     # https://github.com/docker-library/postgres/issues/582
-    [11]='bullseye-slim'
-    [12]='bullseye-slim'
-    [13]='bullseye-slim'
-    [14]='bullseye-slim'
-    [15]='bullseye-slim'
+    #[11]='bullseye-slim'
+    #[12]='bullseye-slim'
+    #[13]='bullseye-slim'
+    #[14]='bullseye-slim'
+    #[15]='bullseye-slim'
     [16]='bullseye-slim'
     [17]='bookworm-slim'
     [18]='trixie-slim'
@@ -41,11 +41,11 @@ declare -A debianSuite=(
 
 defaultPostgisDebPkgNameVersionSuffix='3'
 declare -A postgisDebPkgNameVersionSuffixes=(
-    [3.0]='3'
-    [3.1]='3'
-    [3.2]='3'
-    [3.3]='3'
-    [3.4]='3'
+    #[3.0]='3'
+    #[3.1]='3'
+    #[3.2]='3'
+    #[3.3]='3'
+    #[3.4]='3'
     [3.5]='3'
     [3.6]='3'
 )
